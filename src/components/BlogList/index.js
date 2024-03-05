@@ -1,0 +1,12 @@
+import BlogItem from '../BlogItem'
+
+const BlogList = props=>{
+   const {blogsList} = props 
+  <ul>
+   {blogsList.map(eachItem=>(
+       <BlogItem key={eachItem.id} blogDetails={eachItem}/>
+   ))}
+ </ul>
+}
+
+export default BlogList
