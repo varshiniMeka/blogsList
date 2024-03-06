@@ -2,6 +2,8 @@ import './index.css'
 
 import BlogList from '../BlogList'
 
+import UserInfo from '../UserInfo'
+
 const blogsList = [
   {
     id: 1,
@@ -38,6 +40,7 @@ const blogsList = [
 ]
 const Home = () => (
   <div>
+    <UserInfo />
     <BlogList blogsList={blogsList} />
   </div>
 )
